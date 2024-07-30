@@ -3,7 +3,7 @@
 """ Lockboxes """
 
 
-def can_unlock_all(boxes):
+def canUnlockAll(boxes):
     """
     - boxes is a list of lists.
     - A key with the same number as a box opens that box.
