@@ -13,8 +13,8 @@ class NQueen:
         self.res = []
 
     def place(self, k, i):
-        """ Check if the k-th queen can be placed in column i 
-        without being attacked by other queens 
+        """ Check if the k-th queen can be placed in column i
+        without being attacked by other queens
         """
         for j in range(1, k):
             if self.x[j] == i or abs(self.x[j] - i) == abs(j - k):
@@ -22,7 +22,8 @@ class NQueen:
         return 1
 
     def nQueen(self, k):
-        """ Try to place each queen on the board starting from the k-th queen """
+        """ Try to place each queen on the board starting from the
+        k-th queen """
         for i in range(1, self.n + 1):
             if self.place(k, i):
                 self.x[k] = i
